@@ -14,6 +14,8 @@ package sorting;
 //TC : average case : if array element is in random order = O(n^2)
 //TC : Best case : if array element is sorted in descending order = O(n^2)
 
+//Space Complexity : O(1) because we are not using any extra space except loop variable
+
 //stable in nature
 //adaptive(if we change the order of element then time complexity also change)
 //in place
