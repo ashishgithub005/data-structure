@@ -10,6 +10,14 @@ package sorting;
 //
 //Step 5 − The final output achieved is the sorted array.
 
+//TC : Best case : if array element is sorted in ascending order = O(n)
+//TC : average case : if array element is in random order = O(n^2)
+//TC : Best case : if array element is sorted in descending order = O(n^2)
+
+//stable in nature
+//adaptive(if we change the order of element then time complexity also change)
+//in place
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] a = {8,5,4,7,31,60};
