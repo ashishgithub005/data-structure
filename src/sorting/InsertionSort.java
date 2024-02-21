@@ -44,7 +44,7 @@ public class InsertionSort {
             int j = i-1;
             //compare every sorted element with key(current element)
             //if key is smaller than sorted array element.
-            while(j >=0 && key <= a[j]){
+            while(j >=0 && a[j] > key){
                 //then shift greater element(a[j]) one position towards right(ith index position).
                 a[j+1] = a[j];
                 //decrement j value
