@@ -37,10 +37,10 @@ public class InsertionSort {
         for(int i : a){
             System.out.print(i +", ");
         }
-        //oth index element is always sorted so i start from 1 and end from n-1 index(i moves from left to right)
+        //oth index element is always sorted so i start from 1 to n-1 index(left to right)
         for(int i=1;i<a.length;i++){
             int key = a[i];
-            //j start from i-1 position and move to 0th index(j moves from right to left)
+            //j start from i-1 position and move to 0th index(right to left)
             int j = i-1;
             //compare every sorted element with key(current element)
             //if key is smaller than sorted array element.

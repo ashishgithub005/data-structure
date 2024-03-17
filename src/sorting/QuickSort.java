@@ -5,20 +5,13 @@ public class QuickSort {
        // int[] a = {8,5,4,7,31,60};
        // int[] a = {7,6,5,4,3,2,1};
         //int[] a = {1, 2, 3, 4, 5, 6, 7};
-        int[] a = { 10, 7, 8, 9, 1, 5 };
+        //int[] a = { 10, 7, 8, 9, 1, 5 };
+        int a[] = { 4, 3, 5, 2, 1, 3, 2, 3 };
 
         int low = 0;
         int high = a.length-1;
-        System.out.println("*************: Before Sorting :**************");
-        for(int i : a){
-            System.out.print(i +", ");
-        }
         quickSort(a, low, high);
-        System.out.println();
-        System.out.println("*************: After Sorting :**************");
-        for(int i : a){
-            System.out.print(i+", ");
-        }
+        displayArrayData(a);
      }
 
      private static void quickSort(int[] a, int low, int high){
@@ -30,8 +23,8 @@ public class QuickSort {
      }
 
     private static int partition(int[] arr, int low, int high) {
+       // displayArrayData(arr);
         int pivot = arr[high];
-
         // Index of smaller element and indicates
         // the right position of pivot found so far
         int i = (low - 1);
@@ -47,7 +40,16 @@ public class QuickSort {
             }
         }
         swap(arr, i + 1, high);
+       // displayArrayData(arr);
+
         return (i + 1);
+    }
+
+    private static void displayArrayData(int[] arr) {
+        for(int a : arr){
+            System.out.print(a+", ");
+        }
+        System.out.println();
     }
 
     static void swap(int[] arr, int i, int j)
