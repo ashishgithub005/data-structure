@@ -1,4 +1,4 @@
-package recursion.array;
+package recursion.sorting;
 
 public class BubbleSortUsingRecursion {
     public static void main(String[] args) {
