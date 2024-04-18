@@ -2,15 +2,20 @@ package recursion.string;
 
 public class ReverseString {
     public static void main(String[] args) {
-        String st = "ashish kumar";
-        System.out.println(st.length());
-        String res = reverseStr(st,st.length()-1);
-        System.out.println(res+" : "+res.length());
+        String st = "ashish";
+        //System.out.println(st.length());
+        String res = reverseStr(st,0);
+        System.out.println(res);
     }
 
-    private static String reverseStr(String st, int endIndex) {
-        if(endIndex == -1) return "";
+    /*
+    *  st = "abcd" => "bcd" + "a"
+    *  reverseStr(st, startIndex +1) + st.charAt(startIndex) when i < n
+    *  "" when i == n { base case}
+    */
+    private static String reverseStr(String st, int startIndex) {
+        if(startIndex == st.length()) return "";
 
-        return  st.charAt(endIndex) + reverseStr(st, endIndex-1);
+        return  reverseStr(st, startIndex +1) + st.charAt(startIndex);
     }
 }
