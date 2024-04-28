@@ -1,4 +1,4 @@
-package recursion.array;
+package recursion.string;
 
 public class SubSetSumProblem {
     public static void main(String[] args) {
